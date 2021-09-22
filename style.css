@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+
+@keyframes comeandgo {
+    0%
+    {
+        color: crimson;
+    }
+    35%
+    {
+       color: blueviolet;
+       font-size: 45px;
+    }
+    70%
+    {
+        color: chartreuse;
+        font-size: 50px;
+    }
+    100%
+    {
+        color: crimson;
+    }
+
+}
+
+
+@keyframes rotate {
+    0%
+    {
+        color: crimson;
+    }
+    35%
+    {
+       color: blueviolet;
+       transform: rotateY(90deg);
+       font-weight: 700;
+    }
+    70%
+    {
+        color: chartreuse;
+        transform: rotateY(270deg);
+        font-weight: 700;
+    }
+    100%
+    {
+        color: crimson;
+        transform: rotateY(360deg);
+    }
+
+}
+
+#header
+{
+    width: 100vw;
+    height: 50vh;
+    background-image: url('p2.jpg');
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+nav
+{
+    width: 100vw;
+    height: 10vh;
+    background-color: transparent;
+    color: red;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navlinks:hover
+{
+    color: hotpink;
+    /* transform: scale(1.5); */
+    /* column-rule-style: double; */
+    cursor: grab;
+    font-size: 30px;
+    /* background-color: blue; */
+
+    animation: comeandgo 0.75s linear 0s infinite ;
+    
+}
+
+.iclinks:hover
+{
+    /* background-color: black; */
+    color: gold;
+}
+a
+{
+    text-decoration: none;
+    color: red;
+    font-weight: 700;
+    font-size: calc(1vw + 10px);
+}
+
+#name
+{
+    width: 60vw;
+    background-color: transparent;
+    margin: auto;
+        margin-top: auto;
+    text-align: center;
+    font-size: calc(1vw + 30px);
+    font-weight: 900;
+    color: black;
+    margin-top: 22px;
+}
+
+#icons
+{
+    background-color: transparent;
+    /* width: 40%; */
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    height: auto;
+    width: 60vw;
+    margin: auto;
+        margin-top: auto;
+    margin-top: 45px;
+}
+
+.iclinks
+{
+    color: blue;
+}
+
+
+#profile
+{
+    background: black;
+    height: 41vh;
+        width: 18vw;
+    border-radius: 125px;
+    margin: auto;
+        margin-top: auto;
+    margin-top: -100px;
+    background-image: url('pers.jpg');
+    background-size: cover;
+
+    padding-right: 50px;
+    /* background-repeat: no-repeat; */
+    /* image-orientation: flip; */
+    /* background-size: contain; */
+}
+
+.heading
+{
+    text-align: center;
+    font-family: 'Grechen Fuemen', cursive;
+    color: crimson;
+    font-size: 40px;
+
+    animation: comeandgo 2s linear 1s infinite ;
+}
+
+.heading1
+{
+    text-align: center;
+    font-family: 'Grechen Fuemen', cursive;
+    color: crimson;
+    font-size: 50px;
+
+    animation: rotate 2s linear 1s infinite ;
+}
+
+button
+{
+    width: 60px;
+    height: 50px;
+    position: fixed;
+    right: 10px;
+    bottom: 70px;
+    background-color: black;
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 15px;
+}
+#about
+{
+    padding: 10px;
+   width: 80vw;
+   height: 34vh;
+   margin: auto;
+       margin-top: auto;
+   background-color: bisque;
+   margin-top: 25px;
+   border-radius: 10px;
+
+   font-family: 'Josefin Sans', sans-serif;
+   font-size: 30px;
+}
+
+
+#skills 
+{
+
+    width: 80vw;
+    height: 50vh;
+    background-color: aqua;
+    margin: auto;
+        /* margin-top: 30px; */
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+
+}
+
+#hme
+{
+    color: green;
+}
+
+.htm{
+    width: 80%;
+    height: 5vh;
+    background-color: white;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.hb1{
+    width: 80%;
+    background-color: chartreuse;
+    height: 100%;
+    text-align: center;
+    padding-top: 2px;
+}
+
+.css
+{
+    width: 70%;
+    background-color: lightslategrey;
+    height: 100%;
+    text-align: center;
+    padding-top: 2px;
+}
+
+.bst
+{
+    width: 90%;
+    background-color: hotpink;
+    height: 100%;
+    text-align: center;
+    padding-top: 2px;
+}
+
+.dsa
+{
+    width: 50%;
+    background-color: orangered;
+    height: 100%;
+    text-align: center;
+    padding-top: 2px;
+}
+
+.cpp
+{
+    width: 80%;
+    background-color: grey;
+    height: 100%;
+    text-align: center;
+    padding-top: 2px;
+}
+
+#education
+{
+    width: 80vw;
+    padding: 10px;
+    height: auto;
+    background-color: palegoldenrod;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.under
+{
+    width: 40vw;
+    background-color: black;
+    height: 30vh;
+    margin: 15px;
+    padding: 5px;
+    align-self: start;
+    color: white;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+.high
+{
+    width: 40vw;
+    background-color: darkblue;
+    height: 30vh;
+    margin: 15px;
+    padding: 5px;
+    font-size: 20px;
+    color: white;
+    align-self: flex-end;
+    border-radius: 15px;
+}
+
+.primary
+{
+    width: 40vw;
+    background-color: cadetblue;
+    height: 30vh;
+    margin: 15px;
+    background-color: darkred;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    align-self: start;
+    border-radius: 15px;
+}
+
+
+
+.heading3
+{
+    text-align: center;
+    font-family: 'Grechen Fuemen', cursive;
+    color: crimson;
+    font-size: 40px;
+}
+
+.topic
+{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: yellow;
+    font-size: 25px;
+}
+
+
+footer
+{
+    text-align: center;
+    width: 100vw;
+    height: 4vh;
+    background-color: black;
+    color: white;
+    padding: 3px;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+@media only screen and (max-width: 1250px) and (min-width: 750px) 
+{
+    #profile
+    {
+        width: 53vw;
+
+    }
+}
+
+@media only screen and (max-width: 450px) 
+{
+    #profile 
+    {
+        height: 19vh;
+        width: 28vw;
+        border-radius: 125px;
+        margin: auto;
+        margin-top: -60px;
+        padding-right: 60px;
+    }    
+
+    #header
+    {
+        height: 38vh;
+    }
+
+    #about 
+    {
+        font-size: 18px;
+    }
+
+    .under
+    {
+        font-size: 12px;
+        width: 55vw;
+        padding: 2px;
+    }
+
+    .primary
+    {
+        font-size: 12px;
+        width: 55vw;
+        padding: 2px;
+    }
+
+    .high
+    {
+        font-size: 12px;
+        width: 55vw;
+        padding: 2px;
+    }
+    
+}
+
+
